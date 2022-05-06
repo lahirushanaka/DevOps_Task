@@ -11,6 +11,11 @@ variable "vpc_id" {
   
 }
 
+variable "subnet_name" {
+    description = "Subnet Name to deploy EC2"
+  
+}
+
 variable "instance_type" {
     description = "instance type, ex - t3.micro"
   

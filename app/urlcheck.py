@@ -3,7 +3,7 @@
 ScriptDesc = """
 
 Purpose : Check HTTP Status of URL's
-Description : Bla Bla
+Description : Script will check the URL Status every 10 minutes
 Return Status : Script will return 0 if success
                 Script will return non Zero for an Errornous event
 

@@ -1,6 +1,7 @@
 #variables
 data_region = "ap-southeast-1"
 vpc_id = "vpc-08d84956e1dee96af"
+subnet_name = "Redhat_build_kudu_vpc_1-subnet-public2-ap-southeast-1b"
 instance_type = "t3.micro"
 iam_instance_profile="Lahiru_test_ami_for_tf"
 ec2_pem_key = "LAHIRU_TEST"

@@ -6,6 +6,6 @@ cd DevOps_Task/app
 
 sudo yum update && sudo yum install python3-pip
 pip3 install -r requirements.txt
-
+chmod +x urlcheck.py
 ./urlcheck.py --config_file url.csv &>/dev/null &
 
