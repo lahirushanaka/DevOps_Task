@@ -187,7 +187,7 @@ def main():
 
         checkAllSites()
         scheduler = BackgroundScheduler()
-        scheduler.add_job(checkAllSites, 'interval', minutes=1)
+        scheduler.add_job(checkAllSites, 'interval', minutes=10)
         scheduler.start()
 
         print("Going to Server loop")
