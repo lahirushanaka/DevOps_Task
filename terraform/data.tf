@@ -1,3 +1,13 @@
+data "aws_ami" "project1" {
+    most_recent = true
+    owners      = ["137112412989"]
+
+    filter {
+        name = "name"
+        values = ["amzn2-ami-kernel-5*"]
+    }  
+}
+
 data "aws_vpc" "primary_vpc" {
 
     tags = {
@@ -7,25 +17,13 @@ data "aws_vpc" "primary_vpc" {
 }
 
 # Filter Subnet to launch application primary
-data "aws_subnet" "private_subnet" {
+data "aws_subnets" "private" {
+  filter {
+    name   = "vpc-id"
+    values = [var.vpc_id]
+  }
 
-    tags = {
-        Name = var.private_subnet_1
-    }
+  
 }
 
-# public subnet 1
-data "aws_subnet" "public_subnet1" {
 
-    tags = {
-        Name = var.public_subnet_1
-    }
-}
-
-# public subnet 2
-data "aws_subnet" "public_subnet2" {
-
-    tags = {
-        Name = var.public_subnet_2
-    }
-}

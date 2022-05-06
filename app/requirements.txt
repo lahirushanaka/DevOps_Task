@@ -1,0 +1,8 @@
+###### Requirements for Python app ######
+datetime
+configparser
+csv
+requests
+multiprocessing
+http.server
+apscheduler.schedulers.background
