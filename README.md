@@ -50,10 +50,11 @@ terraform -
     |__ data.tf - Data source defined files
     |__ ec2.tf - AWS EC2 configuration 
     |__ main.tf - AWS plugins and provider configuration
-    |__ output.tf - Output value configuration
+    |__ output.tf - Output value configuration, This will print the IP and Port that you can access the URL status result.
     |__ sg.tf - security Group Creation
     |__ userdata.sh - User data file which allow to install and configure the application
     |__ variable.tf - contain terraform variables
     |__ var.tf - variable file
 ```
 
+Default Port - 10000
