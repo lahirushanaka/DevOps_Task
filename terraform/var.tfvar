@@ -1,8 +1,15 @@
 #variables
+# AWS Region
 data_region = "ap-southeast-1"
+# VPC ID
 vpc_id = "vpc-08d84956e1dee96af"
+# Subnet Name
 subnet_name = "Redhat_build_kudu_vpc_1-subnet-public2-ap-southeast-1b"
+# Instance Type
 instance_type = "t3.micro"
+# IAM Role that need to attached to the EC2 when provissioning 
 iam_instance_profile="Lahiru_test_ami_for_tf"
+# Pem key for EC2 Instance
 ec2_pem_key = "LAHIRU_TEST"
+# Public IP requirement ( true/false)
 public_ip = true
