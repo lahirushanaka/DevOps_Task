@@ -10,10 +10,7 @@ data "aws_ami" "project1" {
 
 data "aws_vpc" "primary_vpc" {
 
-    tags = {
-        Name          = var.vpc
-        Region        = var.data_region
-    }
+    id = var.vpc_id
 }
 
 # Filter Subnet to launch application primary
