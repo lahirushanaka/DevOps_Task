@@ -34,4 +34,8 @@ variable "public_ip" {
   
 }
 
+variable "s3_bucket_state" {
+    description = "S3 State file location"
+  
+}
 

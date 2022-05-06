@@ -1,6 +1,6 @@
 #APP
 resource "aws_security_group" "app_security_group" {
-  name        = "Application-Security-Group"
+  name        = "Application-Security-Group2"
   description = "Allow TLS inbound traffic"
   vpc_id      = data.aws_vpc.primary_vpc.id
 
@@ -29,7 +29,7 @@ resource "aws_security_group" "app_security_group" {
   }
 
   tags = {
-    Name = "app_security_group"
+    Name = "app_security_group2"
   }
 }
 

@@ -14,13 +14,11 @@ data "aws_vpc" "primary_vpc" {
 }
 
 # Filter Subnet to launch application primary
-data "aws_subnets" "private" {
-  filter {
-    name   = "vpc-id"
-    values = [var.vpc_id]
-  }
+data "aws_subnets" "subnet" {
+  tags = {
+        Name = var.subnet_name
 
-  
+    } 
 }
 
 
