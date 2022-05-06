@@ -11,8 +11,8 @@ resource "aws_instance" "myinstance" {
   associate_public_ip_address = var.public_ip
 
   tags = {
-    Name        = "TestProject"
-    Purpose     = "project1"
+    Name        = "TestProject2"
+    Purpose     = "project2"
     RelVersion  = "1.1"
   }
 }
